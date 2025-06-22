@@ -1,7 +1,9 @@
+import AboutMeSection from "@/components/page-home/aboutMe";
+
 export default function Home() {
   return (
-    <div className="flex items-center justify-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <h1 className="text-h1">Hello World</h1>
+    <div className="flex items-start justify-start w-full pt-[140px] lg:px-[60px]">
+      <AboutMeSection />
     </div>
   );
 }

@@ -9,8 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        frutiger: ["Frutiger", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
+        jakarta: ['"Plus Jakarta Sans"', "sans-serif"],
       },
       colors: {
         base: {
@@ -61,6 +60,7 @@ export default {
         b4: ["1.25rem", { lineHeight: "1.8rem", fontWeight: "400" }], // 20px / 28.8px
         b5: ["1rem", { lineHeight: "1.5rem", fontWeight: "400" }], // 16px / 24px
         b6: ["0.875rem", { lineHeight: "1.25rem", fontWeight: "400" }], // 14px / 20px
+        b7: ["0.75rem", { lineHeight: "1rem", fontWeight: "400" }], // 14px / 20px
       },
     },
   },
