@@ -1,6 +1,7 @@
 import ProjectCard from "@/components/page-projects/projectCard";
 import { projects } from "@/components/data/projects";
 import Header from "@/components/text/header";
+import Footer from "@/components/common/footer";
 
 export default function ProjectsPage() {
   return (
@@ -11,6 +12,7 @@ export default function ProjectsPage() {
           <ProjectCard key={index} project={project} />
         ))}
       </div>
+      <Footer />
     </div>
   );
 }

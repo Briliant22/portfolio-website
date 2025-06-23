@@ -109,7 +109,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           }`}
         >
           <h3 className="text-h4 text-base-white">{project.name}</h3>
-          <p className="text-b5 text-base-white">{project.description}</p>
+          <p className="text-b5 text-base-white">{project.hook}</p>
           <div className="flex flex-wrap justify-start items-center gap-[12px] w-full">
             {project.skills?.map((skill, index) => (
               <div

@@ -6,6 +6,7 @@ import { Project, projects } from "@/components/data/projects";
 import Header from "@/components/text/header";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import Footer from "@/components/common/footer";
 
 export default function ProjectDetailPage() {
   const params = useParams();
@@ -37,6 +38,7 @@ export default function ProjectDetailPage() {
       <Header title={project.name} backButton />
       <ProjectIntro project={project} />
       <ProjectDescription project={project} />
+      <Footer />
     </div>
   );
 }

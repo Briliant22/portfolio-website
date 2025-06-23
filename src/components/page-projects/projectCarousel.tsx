@@ -48,7 +48,7 @@ export default function ProjectCarousel({ project }: ProjectCarouselProps) {
       <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg">
         {/* Carousel image */}
         <AnimatePresence initial={false} custom={direction}>
-          <motion.div
+            <motion.div
             key={currentIndex}
             custom={direction}
             variants={variants}
@@ -59,15 +59,16 @@ export default function ProjectCarousel({ project }: ProjectCarouselProps) {
               x: { type: "spring", stiffness: 300, damping: 30 },
               opacity: { duration: 0.2 },
             }}
-            className="absolute w-full h-full"
-          >
+            className="absolute w-full h-full bg-primary-950/50"
+            >
             <Image
               src={images[currentIndex]}
               alt={`Project Image ${currentIndex + 1}`}
               fill
-              className="object-cover rounded-xl"
+              // objectFit options: "cover", "contain", "fill", "none", "scale-down"
+              className="object-contain rounded-xl"
             />
-          </motion.div>
+            </motion.div>
         </AnimatePresence>
 
         {/* Arrows inside image (desktop only) */}

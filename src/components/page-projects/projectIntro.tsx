@@ -21,17 +21,7 @@ export default function ProjectIntro({ project }: ProjectIntroProps) {
       <ProjectCarousel project={project} />
       <div className="flex w-full justify-start items-start">
         <p className="text-b7 sm:text-b6 text-primary-200">
-          {/* {project.description} */}
-          As an Information Systems student at University of Indonesia, I am
-          diligently cultivating my skills to become a software engineer. My
-          journey is marked by hands-on projects, enhancing my proficiency and
-          broadening my technical expertise. Embracing challenges, my effective
-          time management skills have been instrumental in balancing academic
-          pursuits with diverse experiences. This equilibrium allows me to excel
-          academically while exploring new avenues. My involvement in
-          organizational activities has sharpened my leadership and
-          communication skills, essential for collaborative success in team
-          settings.
+          {project.description}
         </p>
       </div>
     </section>

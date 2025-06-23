@@ -1,3 +1,4 @@
+import Footer from "@/components/common/footer";
 import DownloadResume from "@/components/page-resume/downloadResume";
 import ExperienceList from "@/components/page-resume/experienceList";
 import ProfileSection from "@/components/page-resume/profileSection";
@@ -14,6 +15,7 @@ export default function AboutMePage() {
         <SkillsSection />
       </section>
       <ExperienceList />
+      <Footer />
     </div>
   );
 }
