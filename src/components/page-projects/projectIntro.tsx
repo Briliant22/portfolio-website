@@ -1,5 +1,5 @@
 import ProjectCarousel from "./projectCarousel";
-import { Project } from "./projects";
+import { Project } from "../data/projects";
 
 type ProjectIntroProps = {
   project: Project;

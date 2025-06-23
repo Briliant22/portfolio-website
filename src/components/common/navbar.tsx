@@ -10,7 +10,6 @@ const links = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "/projects" },
   { name: "Resume", href: "/resume" },
-  { name: "Contact me", href: "/contact-me" },
 ];
 
 export default function Navbar() {
@@ -21,10 +20,11 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex justify-between items-center text-s5 text-primary-200 py-[10px]">
+    <nav className="flex justify-between items-center text-s5 text-primary-100 py-[10px]">
       {/* Left Logo */}
       <div className="flex items-center">
         <Image src="/icons/logo.svg" alt="Logo" width={66} height={66} />
+        <span className="hidden sm:flex sm:ml-[24px] text-base-white">Najmi Briliant</span>
       </div>
 
       {/* Desktop Navigation */}

@@ -2,7 +2,7 @@
 
 import ProjectDescription from "@/components/page-projects/projectDescription";
 import ProjectIntro from "@/components/page-projects/projectIntro";
-import { Project, projects } from "@/components/page-projects/projects";
+import { Project, projects } from "@/components/data/projects";
 import Header from "@/components/text/header";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";

@@ -1,4 +1,4 @@
-import { Project } from "./projects";
+import { Project } from "../data/projects";
 
 type ProjectDescriptionProps = {
   project: Project;
