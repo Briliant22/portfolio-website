@@ -6,7 +6,7 @@ import { FiArrowDown } from "react-icons/fi";
 export default function DownloadResume() {
   return (
     <a
-      href="/Najmi_Briliant_CV_Software_Engineer_Front_End_Back_End.pdf"
+      href="/Najmi_Briliant_Software_Engineering.pdf"
       download
       className="flex justify-start items-center w-full gap-[12px] group"
     >

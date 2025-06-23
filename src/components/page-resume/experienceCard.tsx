@@ -34,11 +34,11 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
 
       {/* Duration and Location Tag */}
       <div className="flex flex-col sm:flex-row justify-start items-start sm:items-center w-full gap-[12px]">
-        <div className="flex items-center justify-center gap-[8px] text-primary-200 text-s6">
+        <div className="flex items-center justify-center gap-[8px] text-base-white text-s6">
           <FiCalendar className="text-[16px]" />
           <span>{experience.duration}</span>
         </div>
-        <div className="flex items-center justify-center gap-[8px] text-primary-200 text-s6">
+        <div className="flex items-center justify-center gap-[8px] text-base-white text-s6">
           <FiMapPin className="text-[16px]" />
           <span>{experience.location}</span>
         </div>

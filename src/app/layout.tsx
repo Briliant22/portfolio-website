@@ -14,6 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/logo.ico" type="image/x-icon" />
+      </head>
       <body className="antialiased font-jakarta relative overflow-hidden bg-primary-900">
         {/* Fixed background */}
         <div

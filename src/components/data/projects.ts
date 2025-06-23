@@ -105,7 +105,7 @@ export const projects: Project[] = [
     hook: "Automated sentiment analysis of textual data from social media for data-driven insights.",
     path: "web-sentiment-analyzer",
     description:
-      "Developed a web-based sentiment analysis platform, 'Web Sentiment Analyzer', to automate sentiment classification from textual data, particularly tweets. This application provides a comprehensive solution for researchers, brands, and organizations to gain data-driven insights into public sentiment. It features a robust role-based authentication system for Admin and User roles, comprehensive account management, and collaborative project management with tiered analytic limits based on subscription plans. The core functionality includes sentiment analysis from various input sources (CSV upload and copy-paste), visualized through interactive dashboards displaying sentiment-labeled tweet tables, word clouds, and time-series graphs to track sentiment trends. Built on a scalable 3-tier architecture, the front-end is developed with Next.js, the back-end comprises a Web API and specialized Classifier and Statistics microservices using FastAPI, and data is stored in MongoDB. The entire system is containerized with Docker and deployed on the Kawung Fasilkom UI server. ",
+      "Developed a web-based sentiment analysis platform, 'Web Sentiment Analyzer', to automate sentiment classification from textual data, particularly tweets. This application provides a comprehensive solution for researchers, brands, and organizations to gain data-driven insights into public sentiment. It features a robust role-based authentication system for Admin and User roles, comprehensive account management, and collaborative project management with tiered analytic limits based on subscription plans. The core functionality includes sentiment analysis from various input sources (CSV upload and copy-paste), visualized through interactive dashboards displaying sentiment-labeled tweet tables, word clouds, and time-series graphs to track sentiment trends. Built on a scalable 3-tier architecture, the front-end is developed with Next.js, the back-end comprises a Web API and specialized Classifier and Statistics microservices using FastAPI, and data is stored in MongoDB.",
     thumbnail: "/images/analyzer-ui/thumbnail.png",
     images: [
       "/images/analyzer-ui/image1.png",
@@ -196,19 +196,25 @@ export const projects: Project[] = [
     hook: "Streamline team collaboration and financial management with a responsive dashboard.",
     path: "volker-dashboard",
     description:
-      "Developed an internal project tracking and financial dashboard to streamline team collaboration, expense management, and incentive distribution, using Remix, TypeScript, and Tailwind CSS for a responsive and scalable interface. Implemented role-based access control with SSO integration, ensuring secure authentication and tailored workflows for approval hierarchies, financial monitoring, and project assignments. Designed real-time financial dashboards with dynamic charts and exportable reports (Excel), enabling teams to track income, outcomes, and pending transactions, while automating incentive calculations for finished projects.",
+      "An internal project management and financial tracking web application designed for Volker Indonesia. This dashboard centralizes team collaboration, streamlines expense management, and automates incentive distribution, providing a responsive and scalable interface. It features secure role-based access with SSO, tailored workflows for financial approvals, and real-time dashboards with dynamic charts and exportable reports for comprehensive financial monitoring and automated incentive calculations.",
     thumbnail: "/images/volker-dashboard/thumbnail.png",
     images: [
       "/images/volker-dashboard/thumbnail.png",
       "/images/volker-dashboard/image1.png",
       "/images/volker-dashboard/image2.png",
+      "/images/volker-dashboard/image3.png",
+      "/images/volker-dashboard/image4.png",
     ],
     link: "https://example.com/project1",
     skills: ["Remix", "TypeScript", "Tailwind CSS", "Express.js"],
     contributions: [
-      "Developed an internal project tracking and financial dashboard to streamline team collaboration, expense management, and incentive distribution.",
-      "Implemented role-based access control with SSO integration, ensuring secure authentication and tailored workflows for approval hierarchies, financial monitoring, and project assignments.",
-      "Designed real-time financial dashboards with dynamic charts and exportable reports (Excel), enabling teams to track income, outcomes, and pending transactions, while automating incentive calculations for finished projects.",
+      "Engineered a comprehensive internal project management and financial tracking dashboard, centralizing operations for enhanced team collaboration, expense management, and incentive distribution. ",
+      "Implemented robust role-based access control, including SSO integration for login and executive-only account creation, defining distinct permissions for Executive (super admin, final approver) and Finance (first-tier approver) roles. ",
+      "Developed dynamic financial monitoring features for both teams and projects, providing real-time financial projections, detailed income/outcome tracking (CRUD operations for expenses and income), and distinct visualization for 'fresh money' versus 'pending money'. ",
+      "Enabled granular expense management with support for 'Reimbursement' and 'Petty Cash' types, along with the ability to export transaction reports (sheets) and enforce multi-level approvals from both Finance and Executive. ",
+      "Designed and integrated a 'Share Incentives' feature for teams based on total project revenue, ensuring automated and equitable distribution of earnings from completed projects. ",
+      "Implemented a comprehensive 'History Monitoring' system to log and track all financial transactions and project activities, ensuring transparency and auditability. ",
+      "Facilitated project and team management capabilities, including executive-led project creation, member assignment, and real-time status tracking for projects. ",
     ],
     techstacks: [
       {
@@ -242,12 +248,14 @@ export const projects: Project[] = [
     hook: "Company profile website with a CMS for Volker Indonesia.",
     path: "volker-comprof-cms",
     description:
-      "Developed a Company Profile Website and Content Management System using Next.js, TypeScript, and Tailwind CSS, delivering a fast, scalable, and visually appealing user interface. Collaborated with the UI/UX Designer to translate Figma wireframes into pixel-perfect, interactive web pages, achieving a 100% design-to-implementation accuracy and responsiveness on all platforms. Collaborated closely with the Project Manager to align front-end development with project goals, timelines, and client requirements, successfully meeting 100% of client specifications and delivering on time.",
+      "A corporate website and integrated Content Management System (CMS) developed for Volker Indonesia. This platform delivers a fast, scalable, and visually appealing online presence, allowing for efficient content updates. The project focused on transforming UI/UX designs into pixel-perfect, interactive web pages, ensuring high design fidelity and responsiveness across all devices, while adhering strictly to project goals and client specifications.",
     thumbnail: "/images/volker-comprof/thumbnail.png",
     images: [
       "/images/volker-comprof/thumbnail.png",
       "/images/volker-comprof/image1.png",
       "/images/volker-comprof/image2.png",
+      "/images/volker-comprof/image3.png",
+      "/images/volker-comprof/image4.png",
     ],
     link: "https://volkerindonesia.com/",
     skills: ["Next.js", "TypeScript", "Tailwind CSS"],
@@ -283,12 +291,15 @@ export const projects: Project[] = [
     hook: "Company profile website with a CMS for Unicorn Indonesia.",
     path: "unicorn-comprof-cms",
     description:
-      "Developed a Company Profile Website and Content Management System using Next.js, TypeScript, and Tailwind CSS, delivering a responsive, high-performance user interface. Teamed up with the UI/UX Designer to implement pixel-perfect, interactive web pages from Figma wireframes, achieving 100% design-to-implementation accuracy and full cross-platform responsiveness. Collaborated with the Project Manager to ensure front-end development aligned with project objectives, timelines, and client requirements, successfully delivering 100% of client expectations on schedule.",
+      "An official company profile website featuring a comprehensive Content Management System (CMS) for Unicorn Indonesia. The website provides a responsive and high-performance user interface, crucial for showcasing the company's information effectively. Development emphasized precise implementation of UI/UX designs to ensure a pixel-perfect, interactive, and fully cross-platform responsive experience, delivered in full alignment with project objectives and client expectations.",
     thumbnail: "/images/unicorn-comprof/thumbnail.png",
     images: [
       "/images/unicorn-comprof/thumbnail.png",
       "/images/unicorn-comprof/image1.png",
       "/images/unicorn-comprof/image2.png",
+      "/images/unicorn-comprof/image3.png",
+      "/images/unicorn-comprof/image4.png",
+      "/images/unicorn-comprof/image5.png",
     ],
     link: "https://unicornindo.com/",
     skills: ["Next.js", "TypeScript", "Tailwind CSS"],

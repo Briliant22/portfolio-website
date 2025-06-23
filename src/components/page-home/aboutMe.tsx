@@ -170,16 +170,15 @@ export default function AboutMeSection() {
         </div>
 
         <span className="text-b5 text-primary-200 leading-[2.5em]">
-          As an Information Systems student at University of Indonesia, I am
-          diligently cultivating my skills to become a software engineer. My
-          journey is marked by hands-on projects, enhancing my proficiency and
-          broadening my technical expertise. Embracing challenges, my effective
-          time management skills have been instrumental in balancing academic
-          pursuits with diverse experiences. This equilibrium allows me to excel
-          academically while exploring new avenues. My involvement in
-          organizational activities has sharpened my leadership and
-          communication skills, essential for collaborative success in team
-          settings.
+          As an Information Systems student at the University of Indonesia,
+          I&apos;m driven to build impactful digital products and refine my
+          skills as a software engineer. My learning journey emphasizes hands-on
+          projects, which are key to enhancing my proficiency and expanding my
+          technical expertise at the intersection of technology, design, and
+          business. I effectively manage my time to balance academic excellence
+          with diverse practical experiences. Additionally, my involvement in
+          various organizational activities has honed my leadership and
+          communication abilities, crucial for successful team collaboration.
         </span>
       </div>
 

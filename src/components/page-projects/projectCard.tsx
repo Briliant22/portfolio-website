@@ -110,16 +110,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         >
           <h3 className="text-h4 text-base-white">{project.name}</h3>
           <p className="text-b5 text-base-white">{project.hook}</p>
-          <div className="flex flex-wrap justify-start items-center gap-[12px] w-full">
-            {project.skills?.map((skill, index) => (
+            <div className="flex flex-wrap justify-start items-center gap-[12px] w-full">
+            {project.skills?.slice(0, 4).map((skill, index) => (
               <div
-                key={index}
-                className="px-[12px] py-[6px] bg-white/30 rounded-[99px] backdrop-blur-[5px]"
+              key={index}
+              className="px-[12px] py-[6px] bg-white/30 rounded-[99px] backdrop-blur-[5px]"
               >
-                <h5 className="text-base-white text-s6">{skill}</h5>
+              <h5 className="text-base-white text-s6">{skill}</h5>
               </div>
             ))}
-          </div>
+            </div>
         </motion.div>
       </motion.div>
     </motion.div>
