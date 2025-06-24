@@ -2,6 +2,7 @@ import ProjectCard from "@/components/page-projects/projectCard";
 import { projects } from "@/components/data/projects";
 import Header from "@/components/text/header";
 import Footer from "@/components/common/footer";
+import NavigationButton from "@/components/common/navigationButton";
 
 export default function ProjectsPage() {
   return (
@@ -12,6 +13,7 @@ export default function ProjectsPage() {
           <ProjectCard key={index} project={project} />
         ))}
       </div>
+      <NavigationButton link="/resume" text="See More Of My Experiences" />
       <Footer />
     </div>
   );

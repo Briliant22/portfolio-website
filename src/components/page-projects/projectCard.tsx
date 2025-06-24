@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { Project } from "../data/projects";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 type ProjectCardProps = {
   project: Project;
@@ -11,6 +11,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   const router = useRouter();
+  const cardRef = useRef<HTMLDivElement>(null);
   const [isActive, setIsActive] = useState(false);
   const [showName, setShowName] = useState(true);
 
@@ -39,16 +40,33 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     }
   }, [isActive]);
 
+  useEffect(() => {
+    const handleOutsideClick = (e: MouseEvent) => {
+      if (
+        isActive &&
+        cardRef.current &&
+        !cardRef.current.contains(e.target as Node)
+      ) {
+        setIsActive(false);
+      }
+    };
+
+    if (isActive) {
+      document.addEventListener("click", handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [isActive]);
+
   return (
     <motion.div
+      ref={cardRef}
       className="relative"
       animate={isActive ? "active" : "inactive"}
-      initial={{
-        scale: 1,
-      }}
-      whileHover={{
-        scale: 1.02,
-      }}
+      initial={{ scale: 1 }}
+      whileHover={{ scale: 1.02 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
     >
       {/* Pulsating border */}
@@ -56,15 +74,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <motion.div
           className="absolute inset-0 rounded-[24px] border-[4px] border-primary-500 pointer-events-none z-20"
           initial={{ opacity: 1, scale: 1 }}
-          animate={{
-            opacity: [1, 0, 1],
-            scale: [1, 1, 1],
-          }}
-          transition={{
-            repeat: Infinity,
-            duration: 1,
-            ease: "easeInOut",
-          }}
+          animate={{ opacity: [1, 0, 1], scale: [1, 1, 1] }}
+          transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
         />
       )}
 
@@ -110,16 +121,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         >
           <h3 className="text-h4 text-base-white">{project.name}</h3>
           <p className="text-b5 text-base-white">{project.hook}</p>
-            <div className="flex flex-wrap justify-start items-center gap-[12px] w-full">
+          <div className="flex flex-wrap justify-start items-center gap-[12px] w-full">
             {project.skills?.slice(0, 4).map((skill, index) => (
               <div
-              key={index}
-              className="px-[12px] py-[6px] bg-white/30 rounded-[99px] backdrop-blur-[5px]"
+                key={index}
+                className="px-[12px] py-[6px] bg-white/30 rounded-[99px] backdrop-blur-[5px]"
               >
-              <h5 className="text-base-white text-s6">{skill}</h5>
+                <h5 className="text-base-white text-s6">{skill}</h5>
               </div>
             ))}
-            </div>
+          </div>
         </motion.div>
       </motion.div>
     </motion.div>

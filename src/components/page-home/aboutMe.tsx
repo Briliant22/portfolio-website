@@ -1,5 +1,6 @@
 "use client";
 
+import NavigationButton from "../common/navigationButton";
 import SocialLinks from "./socialLinks";
 import { useEffect, useState } from "react";
 
@@ -181,6 +182,8 @@ export default function AboutMeSection() {
           communication abilities, crucial for successful team collaboration.
         </span>
       </div>
+
+      <NavigationButton link="/projects" text="See My Projects" />
 
       <div className="flex gap-[36px]">
         {socialLinks.map((link, index) => (

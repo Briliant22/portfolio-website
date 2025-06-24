@@ -7,6 +7,7 @@ import { PiGraduationCapBold } from "react-icons/pi";
 import { motion } from "framer-motion";
 
 export default function ProfileSection() {
+  
   const socialLinks = [
     {
       name: "GitHub",
@@ -24,6 +25,7 @@ export default function ProfileSection() {
       icon: "/icons/instagram.svg",
     },
   ];
+
   return (
     <motion.div
       initial={{
